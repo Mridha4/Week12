@@ -29,3 +29,22 @@ const clickButton = document.querySelector('.click-me');
     clickButton.addEventListener('click', clickHandler, {once:true});
 // above does the same thing as the second one but uses a boolean. 
 
+function changeBGPink()
+{
+    document.body.style.backgroundColor = 'pink';
+    document.body.classList.add('pinkBG');
+    // the second one uses css to change the background color
+}
+clickButton.addEventListener('click', changeBGPink);
+// above changes the background color to pink
+
+function changeText()
+{
+    if (clickButton.textContent === "Click Me!")
+    {
+        clickButton.textContent = "Clicked!";
+    } else if (clickButton.textContent === "Clicked!") {
+        clickButton.textContent = "Click Me!";
+    }
+}
+clickButton.addEventListener('click', changeText);
