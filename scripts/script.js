@@ -48,3 +48,18 @@ function changeText()
     }
 }
 clickButton.addEventListener('click', changeText);
+// above changes thew buttons text
+
+
+
+function updateImage(event)
+{
+    const image = document.querySelector("#cart");
+    image.src = "images/cart.png";
+    image.alt = 'Picture of Cart';
+    image.width = '100';
+    image.height = '100';
+
+}
+clickButton.addEventListener('click', updateImage);
+// above is a function that spawns an image after button clicked
