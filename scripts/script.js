@@ -63,3 +63,19 @@ function updateImage(event)
 }
 clickButton.addEventListener('click', updateImage);
 // above is a function that spawns an image after button clicked
+
+
+
+const buttonContainer = document.querySelector(".div-container");
+buttonContainer.addEventListener('mouseover', changeBGGreen);
+
+function changeBGGreen(e)
+{
+    e.target.style.backgroundColor = "green";
+}
+
+buttonContainer.addEventListener('click', changeButtonTextColor);
+function changeButtonTextColor(e)
+{
+    e.target.style.color = "red";
+}
